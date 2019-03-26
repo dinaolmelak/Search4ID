@@ -14,9 +14,14 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-    }
-    @IBAction func didTapOnFound(_ sender: Any) {
+        performSegue(withIdentifier: "tapFoundButton", sender: CreatedViewController.self)
         
+    }
+    
+    @IBAction func didTapOnFound(_ sender: Any) {
+        if(textFieldLabel.text=="Not found"){
+            
+        }
         
     }
     

@@ -9,11 +9,19 @@
 import UIKit
 
 class CreatedViewController: UIViewController {
-
+    @IBOutlet weak var inputTextField: UILabel!
+    @IBOutlet weak var creationFoundLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+    }
+    @IBAction func didTapOnCancel(_ sender: Any) {
+        dismiss(animated: true)
+        
     }
     
 
